@@ -1,0 +1,5 @@
+#add for fpsensor fingerprint test
+allow system_app hal_fingerprint_default:fd {use};
+allow system_app teetz_device:chr_file {open ioctl read write};
+allow system_app fpsensor_fp_device:chr_file {open read write ioctl};
+allow system_app fp_ext_svc2_service:hwservice_manager {find};

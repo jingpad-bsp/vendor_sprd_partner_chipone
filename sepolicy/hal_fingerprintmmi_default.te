@@ -1,0 +1,4 @@
+allow hal_fingerprintmmi_default fpsensor_fp_device:chr_file { read write open ioctl };
+allow hal_fingerprintmmi_default  fp_ext_svc2_service:hwservice_manager {add find};
+allow hal_fingerprintmmi_default hal_fingerprint_default:binder { call };
+

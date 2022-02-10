@@ -1,0 +1,2 @@
+# Add for fpsensor fingerprint
+allow init fpsensor_fp_device:chr_file {getattr read write ioctl open };

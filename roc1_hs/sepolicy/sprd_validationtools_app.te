@@ -1,0 +1,14 @@
+allow sprd_validationtools_app teetz_device:chr_file {open ioctl read write};
+allow sprd_validationtools_app fpsensor_fp_device:chr_file {open read write ioctl};
+allow sprd_validationtools_app fp_ext_svc2_service:hwservice_manager {find};
+allow sprd_validationtools_app hal_fingerprint_default:binder { call };
+
+allow autotest teetz_device:chr_file {open ioctl read write};
+allow autotest fpsensor_fp_device:chr_file {open read write ioctl};
+allow autotest fp_ext_svc2_service:hwservice_manager {find};
+allow autotest hal_fingerprint_default:binder { call };
+
+allow factorytest teetz_device:chr_file {open ioctl read write};
+allow factorytest fpsensor_fp_device:chr_file {open read write ioctl};
+allow factorytest fp_ext_svc2_service:hwservice_manager {find};
+allow factorytest hal_fingerprint_default:binder { call };

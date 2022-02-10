@@ -1,0 +1,13 @@
+on post-fs
+    insmod ${ro.vendor.ko.mount.point}/socko/fpsensor.ko
+
+on boot
+    # add for fpsensor Fingerprint
+    chmod 660 /dev/fpsensor
+    chown system system /dev/fpsensor
+
+    mkdir /data/fpsensor
+    chown system system /data/fpsensor
+    chmod 660 /data/fpsensor/socket
+    chown system system /data/fpsensor/socket
+    chmod 660 /data/fpsensor

@@ -1,0 +1,2 @@
+#add for fpsensor fingerprint test
+type fp_ext_svc2_service,   hwservice_manager_type;

@@ -1,0 +1,1 @@
+allow sprd_validationtools_app fpsensor_fp_device:chr_file { read write ioctl open };
